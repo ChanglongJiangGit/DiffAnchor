@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="DiffAnchor: Anchor-Space Diffusion for Monocular 3D Hand Pose Estimation. IEEE Embodied AI Oral Presentation. Code is coming soon.">
+<title>DiffAnchor | IEEE Embodied AI Oral Presentation</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#fafbfe;color:#182338;font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.65}main{max-width:1080px;margin:auto;padding:64px 24px 40px}header{text-align:center;max-width:940px;margin:0 auto 44px}.badge{display:inline-block;padding:7px 16px;border:1px solid #c5d8f4;background:#edf4ff;color:#2155a4;border-radius:999px;font-size:14px;font-weight:650}h1{font-size:clamp(48px,9vw,76px);line-height:1.1;letter-spacing:-.055em;margin:26px 0 16px;color:#2353a2}.title{font-size:clamp(23px,4vw,34px);line-height:1.3;font-weight:650;margin:0 auto 22px;max-width:880px;letter-spacing:-.025em}.authors{font-size:15px;color:#536077;max-width:800px;margin:0 auto 24px}.status{display:inline-block;border:1px solid #e6d3a4;border-radius:9px;background:#fff8e8;padding:9px 18px;color:#77551d;font-weight:650}nav{margin-top:24px}nav a{color:#fff;background:#243a5e;text-decoration:none;padding:11px 22px;display:inline-block;border-radius:9px;font-size:15px}nav a:hover{background:#2353a2}section{background:#fff;border:1px solid #e1e7ef;border-radius:18px;padding:28px;margin-top:22px}h2{font-size:21px;margin:0 0 12px;letter-spacing:-.02em}p{margin:0;color:#4c5b70}figure{margin:20px 0 0}figure img{width:100%;height:auto;display:block}figcaption{font-size:14px;color:#627086;line-height:1.6;margin-top:18px}.release{display:flex;align-items:center;justify-content:space-between;gap:24px}.release img{width:126px;height:126px;flex-shrink:0}.release a{color:#2353a2}footer{text-align:center;font-size:13px;color:#7b8798;margin-top:30px}@media(max-width:600px){main{padding:36px 16px 28px}section{padding:20px}.release{align-items:flex-start;flex-direction:column}.badge{font-size:12px}.authors{font-size:14px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="badge">IEEE Embodied AI · Oral Presentation</div>
+<h1>DiffAnchor</h1>
+<p class="title">Anchor-Space Diffusion for Monocular<br>3D Hand Pose Estimation</p>
+<p class="authors">Changlong Jiang, Youci Tang, Haohong Kuang, Hang Xu, Jinghong Zheng,<br>Ran Wang, Zhenghong Yu, Chen Feng, Xiaofeng Yue, and Yang Xiao</p>
+<div class="status">Code is coming soon.</div>
+<nav aria-label="Project resources"><a href="https://github.com/ChanglongJiangGit/DiffAnchor">View on GitHub ↗</a></nav>
+</header>
+<section aria-labelledby="overview">
+<h2 id="overview">Overview</h2>
+<p>DiffAnchor estimates 3D hand pose from a single RGB or depth image. It uses a few diffusion steps to find informative anchors, then predicts anchor-to-joint offsets and combines their predictions to locate the hand joints.</p>
+<figure>
+<img src="method-overview.png" width="1295" height="485" alt="DiffAnchor pipeline: an image encoder and diffusion decoder refine anchors; weight and offset estimators predict and aggregate 3D hand joints.">
+<figcaption>Method overview, cropped from Figure 2 of the paper. Fixed anchors provide spatial context; dynamic anchors are refined through diffusion. Anchor-to-joint offsets and importance weights produce the final 3D hand pose. Blue and orange arrows show training and testing data flow, respectively.</figcaption>
+</figure>
+</section>
+<section class="release" aria-labelledby="release">
+<div><h2 id="release">Code release</h2><p>Accepted for <strong>Oral Presentation at IEEE Embodied AI</strong>.</p><p>Code is coming soon. Updates will be posted in the <a href="https://github.com/ChanglongJiangGit/DiffAnchor">GitHub repository</a>.</p></div>
+<a href="https://github.com/ChanglongJiangGit/DiffAnchor" aria-label="Open the DiffAnchor GitHub repository"><img src="diffanchor-qr.png" alt="QR code linking to the DiffAnchor GitHub repository"></a>
+</section>
+<footer>DiffAnchor · Project page</footer>
+</main>
+</body>
+</html>
